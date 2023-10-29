@@ -4,13 +4,13 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
+from typing import Optional, Tuple, Type
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from typing import Optional, Tuple, Type
-
-from .common import LayerNorm2d, MLPBlock
+from .common import MLPBlock, LayerNorm2d
 
 
 # This class and its supporting functions below lightly adapted from the ViTDet backbone available at: https://github.com/facebookresearch/detectron2/blob/main/detectron2/modeling/backbone/vit.py # noqa
