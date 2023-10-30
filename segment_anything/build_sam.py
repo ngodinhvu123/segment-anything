@@ -8,8 +8,11 @@ import torch
 
 from functools import partial
 
-from .modeling import ImageEncoderViT, MaskDecoder, PromptEncoder, Sam, TwoWayTransformer
-
+from modeling.image_encoder import ImageEncoderViT
+from modeling.mask_decoder import MaskDecoder
+from modeling.prompt_encoder import PromptEncoder
+from modeling.sam import Sam
+from modeling.transformer import TwoWayTransformer
 
 def build_sam_vit_h(checkpoint=None):
     return _build_sam(
